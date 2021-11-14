@@ -1,28 +1,131 @@
-<html>
-        <head>
-        <title>Font Manipulator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="main.js"></script>
 
+<html>
+    <head>
+      <title>Dhanush's Case Study</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <script src="main.js"></script>
-    <body background="background.jpeg">
-            <h3 class="btn btn-warning heading_div">Font Manipulator
-                <br>
-                <b id="note">Note: Get your left and right wrist to each other to reduce the font size and to increase the font size you must keep your left and right wrists far from each other.</b>
-                <br>
-            <span id="font_size"></span>        
-            </h3>
-            
+    <body>
+       <center>
+           <div class="title_div">
+           <span id="title">
+               <b>Case Study</b>
+               <img src="logo-removebg-preview.png">
+           </span>
         </div>
-        <div class="copy-right-footer">By: Dhanush Kandlagunta</div>
-        <script src="main.js"></script>
-        </body>
-</html>
+        <hr>
+        <marquee height="60px" direction="left">The upcoming images will be the testing images for both identification apps!</marquee>
+        <br><br>
+          <div class="text_images_and_result">
+            <ol>
+            <li>
+              <b>Test Image - </b><br><br><img src="Book.JPG" class="img-responsive" id="test">
+
+            <br><br>
+            <h5>Output on <b>Microsoft Azure</b> - cardcase
+              <span> </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model</b> - wall clock
+            <span> </span>
+            </h5>
+
+            <div class="result">
+              <h4>Result - </h4>
+              <h4> Neither </h4>
+            </div>
+          </div>
+
+          <br><br>
+          <div class="text_images_and_result">
+            <ol>
+              <b>Test Image - </b><br><br><img src="Bottle.JPG" class="img-responsive" id="test">
+            <br><br>
+            <h5>Output on <b>Microsoft Azure</b> - thermos
+              <span> </span>
+            </h5>
+            <h5>Output on <b>MobileNet Model</b> - screwdriver
+            <span> </span>
+            </h5>
+
+            <div class="result">
+              <h4>Result - </h4>
+              <h4> Azure </h4>
+            </div>
+          </div>
+
+<br><br>
+<div class="text_images_and_result">
+  <ol>
+    <b>Test Image - </b><br><br><img src="Glasses.JPG" class="img-responsive" id="test">
+  <br><br>
+  <h5>Output on <b>Microsoft Azure</b> - a close up of a gun
+    <span> </span>
+  </h5>
+  <h5>Output on <b>MobileNet Model</b> - wallet, billfold, notecase, pocketbook
+  <span> Neither </span>
+  </h5>
+  <div class="result">
+    <h4>Result - </h4>
+    <h4> Neither </h4>
+  </div>
+</div>
+
+<br><br>
+<div class="text_images_and_result">
+  <ol>
+    <b>Test Image - </b><br><br><img src="Hairtie.JPG" class="img-responsive" id="test">
+  <br><br>
+  <h5>Output on <b>Microsoft Azure</b> - a close up of a baby
+    <span> </span>
+  </h5>
+  <h5>Output on <b>MobileNet Model</b> - shower curtain
+  <span> </span>
+  </h5>
+
+  <div class="result">
+    <h4>Result - </h4>
+    <h4> Neither </h4>
+  </div>
+</div>
+
+<br><br>
+<div class="text_images_and_result">
+<ol>
+<b>Test Image - </b><br><br><img src="sock.JPG" class="img-responsive" id="test">
+<br><br>
+<h5>Output on <b>Microsoft Azure</b> - 
+<span> a close up of a toy lying on a rug </span>
+</h5>
+<h5>Output on <b>MobileNet Model</b> - 
+<span> doormat, welcome mat </span>
+</h5>
+<div class="result">
+  <h4>Result - </h4>
+  <h4> Neither </h4>
+</div>
+</div>
+</li>
+</ol> 
+<br><br>
+<b id="results_final">I have tested images and out of 5 images, Microsoft Azure is 20% accurate and MobileNet is 0% accurate, so I think Microsoft Azure is more accurate but comparing these percentages make me think they are not accurate.</div>
+<br><br>
+
+</center> 
+<br><br>
+
+</ol>
+</div>
+<div class="copy-right-footer">
+  Developed By - Dhanush.K
+</div>
+</body>
